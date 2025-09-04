@@ -1,9 +1,14 @@
-
+'use client'
 import React from 'react'
+import MainApp from './MainApp'
+import ReactTostify from './ReactTostify'
 
 function  page () {
   return (
-    <div>page</div>
+    <div>
+      <ReactTostify />
+      <MainApp />
+    </div>
   )
 }
 

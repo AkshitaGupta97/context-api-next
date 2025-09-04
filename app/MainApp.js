@@ -1,11 +1,14 @@
 
 import Header from '@/Component/Header'
-import React from 'react'
+import { MyContext } from '@/ContextHelper/Context'
+import React, { useContext } from 'react'
 
 function MainApp() {
+    const user = useContext(MyContext);
   return (
     <div>
-        MainApp
+        <h2>Home Page</h2>
+        <h3>User Name is : {user}</h3>
         <Header />
     </div>
   )

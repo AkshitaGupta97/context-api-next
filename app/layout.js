@@ -1,4 +1,5 @@
 //import { Geist, Geist_Mono } from "next/font/google";
+import Context from "@/ContextHelper/Context";
 import "./globals.css";
 
 
@@ -10,8 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body >
-        {children}
+      <body suppressHydrationWarning>
+        <Context>
+          {children}
+        </Context>
       </body>
     </html>
   );
